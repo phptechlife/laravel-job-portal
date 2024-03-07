@@ -120,12 +120,12 @@
                                     </div>
                                 </div>
                                 @endforeach
+                                <div class="col-md-12">
+                                    {{ $jobs->withQueryString()->links() }}
+                                </div>
                             @else
-                            <div class="col-md-12">Jobs not found</div>
-                                
-                            @endif
-                            
-
+                            <div class="col-md-12">Jobs not found</div>                                
+                            @endif                           
                         </div>
                     </div>
                 </div>
